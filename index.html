@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasanth SDTN - Portfolio</title>
+    <style>
+        *{
+            font-family: monospace;
+        }
+
+        body{
+            font-size: 20px;
+            background-color: rgb(213, 232, 248);
+            margin: 0;
+        }
+
+        header{
+            height: 100vh;
+            color: white;
+            background-color: #2196F3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } 
+
+        header h1{
+            font-size: 55px;
+            color: rgb(38, 19, 211);
+            margin: 0;
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button{
+            height: 35px;
+            width: 155px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button:hover{
+            color: #eae6f3;
+            background-color: #29078e;
+        }
+
+        main{
+            padding: 10px;
+        }
+
+        section{
+            min-height: 100vh;
+            border: 1px solid grey;
+            border-radius: 20px;
+            background-color: aliceblue;
+            margin: 20px 0;
+            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            text-align: center;
+            max-width: 800px;
+        }
+
+        input{
+            border-radius: 10px;
+            border: 2px solid gray;
+            height: 25px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .fixedButton{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            height: 40px;
+            width: 40px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            color: rgb(25, 10, 10);
+            background-color: #0ea7ee;
+        }
+
+        footer{
+            height: 125px;
+            background-color: black;
+            color: rgb(182, 199, 199);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1,h2,h3,h4,h5,h6{
+            color: #4b1dd4;
+            margin: 0;
+        }   
+
+        .submit{
+            height: 40px;
+            width: 130px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: aliceblue;
+            background-color: #2196F3;
+        }
+
+        .submit:hover{
+            background-color: #238adf;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px 20px;
+            border: 1px solid #333;
+        }
+
+        ol {
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <div class="nav-buttons">
+                <a href="#about"><button class="button">About</button></a>
+                <a href="#skills"><button class="button">Skills</button></a>
+                <a href="#projects"><button class="button">Projects</button></a>
+                <a href="#contact"><button class="button">Contact</button></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="content">
+                <h1>Prasanth SDTN</h1>
+                  <img src="my image.jpeg" width="220" height="220">
+                <p>I am passionate web developer with a focus on front-end technologies.</p>
+                <p>I am currently Persuing My B.Tech in <em>Siddharth Institute of Engineering Technology</em> Puttur.</p>
+                <p>I have learnt web Development.</p>
+                <p>You can <strong>Click here</strong> to Checkout What I have learnt in<br> Hyper text markup language, Cascading Style Sheets, JavaScript.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="content">
+                <h1>MY Skills</h1>
+                <ol>
+                    <li>Python Basics</li>
+                    <li>HTML Basics</li>
+                    <li>CSS Basics</li>
+                    <li>JavaScript Basics</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="content">
+                <h1>My Projects</h1>
+                <table border="1">
+                    <tr>
+                        <th>Project</th> 
+                        <th>Description</th>
+                    </tr>  
+                    <tr>
+                        <td>Portfolio Website</td>
+                        <td>I have built a Portfolio Website by using HTML, CSS & JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Simple Calculator</td>
+                        <td>I have built a Simple Calculator in the course by code with Swaroop</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="content">
+                
+        <h1>Contact Me</h1><br>
+        
+        <form id="contactForm" style="max-width: 400px; margin: 0 auto;">
+            <!-- Name Field -->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" placeholder="Enter your name"
+                   style="width: 100%; padding: 10px; border: 2px solid gray; border-radius: 10px; margin: 5px 0;">
+            <p id="nameMsg" style="margin: 0; font-size: 14px; height: 20px;"></p>
+            
+            <!-- Email Field -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="you@example.com" 
+                   style="width: 100%; padding: 10px; border: 2px solid gray; border-radius: 10px; margin: 5px 0;">
+            <p id="emailMsg" style="margin: 0; font-size: 14px; height: 20px;"></p>
+            
+            <!-- Message Field -->
+            <label for="message">Message:</label><br>
+            <textarea id="message" placeholder="Type your message..." maxlength="200" rows="4"
+                      style="width: 100%; padding: 10px; border: 2px solid gray; border-radius: 10px; margin: 5px 0; font-family: monospace;"></textarea>
+            <p id="charCount" style="text-align: right; margin: 0; font-size: 14px; color: #4b1dd4;">0 / 200</p>
+            
+            <!-- Submit Button -->
+            <button type="submit" id="submitBtn" disabled 
+                    style="width: 100%; height: 45px; border: none; border-radius: 10px; background: #ccc; color: white; font-size: 16px; cursor: not-allowed; margin-top: 10px;">
+                Send Message
+            </button>
+            
+            <p id="successText" style="text-align: center; color: green; font-weight: bold; margin-top: 15px;"></p>
+        </form>
+    </div>
+</section>
+
+<script>
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const msgInput = document.getElementById('message');
+    const submitBtn = document.getElementById('submitBtn');
+    
+    let valid = { name: false, email: false, message: false };
+    
+    // Name validation
+    nameInput.addEventListener('input', () => {
+        const msg = document.getElementById('nameMsg');
+        if (nameInput.value.length < 3) {
+            msg.textContent = 'Min 3 characters required';
+            msg.style.color = 'red';
+            nameInput.style.borderColor = 'red';
+            valid.name = false;
+        } else {
+            msg.textContent = 'Looks good ✅';
+            msg.style.color = 'green';
+            nameInput.style.borderColor = 'green';
+            valid.name = true;
+        }
+        updateButton();
+    });
+    
+    // Email validation
+    emailInput.addEventListener('input', () => {
+        const msg = document.getElementById('emailMsg');
+        if (!emailInput.value.includes('@') || !emailInput.value.includes('.')) {
+            msg.textContent = 'Enter valid email';
+            msg.style.color = 'red';
+            emailInput.style.borderColor = 'red';
+            valid.email = false;
+        } else {
+            msg.textContent = 'Looks good ✅';
+            msg.style.color = 'green';
+            emailInput.style.borderColor = 'green';
+            valid.email = true;
+        }
+        updateButton();
+    });
+    
+    // Message + Counter
+    msgInput.addEventListener('input', () => {
+        const count = document.getElementById('charCount');
+        let len = msgInput.value.length;
+        count.textContent = len + ' / 200';
+        
+        if (len < 10) {
+            msgInput.style.borderColor = 'red';
+            count.style.color = 'red';
+            valid.message = false;
+        } else {
+            msgInput.style.borderColor = 'green';
+            count.style.color = len > 180 ? 'orange' : '#4b1dd4';
+            valid.message = true;
+        }
+        updateButton();
+    });
+    
+    // Button enable/disable
+    function updateButton() {
+        if (valid.name && valid.email && valid.message) {
+            submitBtn.disabled = false;
+            submitBtn.style.background = '#2196F3';
+            submitBtn.style.cursor = 'pointer';
+        } else {
+            submitBtn.disabled = true;
+            submitBtn.style.background = '#ccc';
+            submitBtn.style.cursor = 'not-allowed';
+        }
+    }
+    
+    // Form submit
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+        e.preventDefault(); // Page reload avvakunda
+        
+        document.getElementById('successText').textContent = 'Thanks ' + nameInput.value + '! Message received 🎉';
+        
+        // Form reset
+        nameInput.value = '';
+        emailInput.value = '';
+        msgInput.value = '';
+        nameInput.style.borderColor = 'gray';
+        emailInput.style.borderColor = 'gray';
+        msgInput.style.borderColor = 'gray';
+        document.getElementById('nameMsg').textContent = '';
+        document.getElementById('emailMsg').textContent = '';
+        document.getElementById('charCount').textContent = '0 / 200';
+        valid = { name: false, email: false, message: false };
+        updateButton();
+        
+        // 3 sec tarvata success msg hide
+        setTimeout(() => {
+            document.getElementById('successText').textContent = '';
+        }, 3000);
+    });
+</script>
+
+    <a href="#"><button class="fixedButton">TOP</button></a>
+
+    <footer>
+        <p>© My Portfolio 2026</p>
+    </footer>
+</body>
+</html>
